@@ -1,6 +1,7 @@
 variable "virginia_cidr" {
   description = "CIDR Virginia"
   type        = string
+  // sensitive = false // oculta el valor en el plan
 }
 
 # variable "public_subnet" {

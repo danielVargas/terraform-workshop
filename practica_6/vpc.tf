@@ -1,14 +1,14 @@
 resource "aws_vpc" "vpc_virginia" {
   cidr_block = var.virginia_cidr
   tags = {
-    "Name" = "vpc_virginia"
+    "Name" = "vpc_virginia" // Es un tag extra, que se suma a los default del provider
   }
 }
 
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.vpc_virginia.id
-  cidr_block              = var.subnets[0]
-  map_public_ip_on_launch = true
+  cidr_block              = var.subnets[0] // ver terraform.tfvars
+  map_public_ip_on_launch = true // Asigna una IP publica a la instancia
   tags = {
     "Name" = "public_subnet"
   }
