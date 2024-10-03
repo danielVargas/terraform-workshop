@@ -17,3 +17,6 @@ Instancia 54.147.198.129 Destruida
 instancia creada con IP 54.147.14.237
 Instancia 54.147.14.237 Destruida
 instancia creada con IP 54.87.128.235
+Instancia 54.87.128.235 Destruida
+instancia creada con IP 54.166.236.86
+Instancia 54.166.236.86 Destruida
