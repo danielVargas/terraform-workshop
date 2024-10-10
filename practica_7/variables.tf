@@ -50,3 +50,12 @@ variable "ingress_ports_list" {
 
 
 
+
+variable "entornos" {
+  description = "Enntornos"
+	type = map(string)
+	default = {
+		"prod" = "10.10.0.0/16"
+		"dev" = "172.16.0.0/16"
+	}
+}

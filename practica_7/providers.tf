@@ -4,17 +4,13 @@ terraform {
       source  = "hashicorp/aws"
       version = ">=4.36.0, <4.47.0, !=4.43.0"
     }
-    random = {
-      source  = "hashicorp/random"
-      version = "3.4.3"
-    }
   }
-  required_version = "~>1.3.0"
+  required_version = "~>1.9.0"
 }
 
 provider "aws" {
   region = "us-east-1"
-  default_tags {
+  default_tags { // aplica a todos los recursos que se levanten en este proyecto ttf 
     tags = var.tags
   }
 }
