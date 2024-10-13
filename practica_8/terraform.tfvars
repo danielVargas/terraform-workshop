@@ -6,7 +6,7 @@ subnets = ["10.10.0.0/24", "10.10.1.0/24"]
 
 tags = {
   "env"         = "dev"
-  "owner"       = "Nazareno"
+  "owner"       = "Dilios"
   "cloud"       = "AWS"
   "IAC"         = "Terraform"
   "IAC_Version" = "1.3.6"
