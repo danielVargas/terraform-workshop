@@ -57,6 +57,8 @@ resource "aws_security_group" "sg_public_instance" {
   description = "Allow SSH inbound traffic and ALL egress traffic"
   vpc_id      = aws_vpc.vpc_virginia.id
 
+  #Dinamyic block, con el nombre de "ingress" y el valor de "ingress_ports_list".
+  # Se usa dinamc + el atributo que se quiere dinamizar. Ej: dimamic "egress" { }
   dynamic "ingress" {
     for_each = var.ingress_ports_list
     content {

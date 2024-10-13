@@ -6,7 +6,7 @@ subnets = ["10.10.0.0/24", "10.10.1.0/24"]
 
 tags = {
   "env"         = "dev"
-  "owner"       = "Nazareno"
+  "owner"       = "devops"
   "cloud"       = "AWS"
   "IAC"         = "Terraform"
   "IAC_Version" = "1.3.6"
@@ -23,4 +23,5 @@ ec2_specs = {
 
 enable_monitoring = 0
 
+# Puertos de los segurity groups que se van a habilitar
 ingress_ports_list = [22, 80, 443]
